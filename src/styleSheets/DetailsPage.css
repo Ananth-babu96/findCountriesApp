@@ -1,0 +1,37 @@
+body{
+
+}
+.detailspage{
+    background: hsl(207, 26%, 17%);
+    width:100%;
+    min-height:100vh;
+    color:white;
+    padding:40px;
+}
+.detailspageLight{
+    background: hsl(0, 0%, 86%);
+    color:black;
+}
+.backButton{
+    all:unset;
+    background: hsl(209, 23%, 22%);
+    width:80px;
+    padding:4px;
+}
+.backButtonLight{
+    background: hsl(0, 0%, 100%);
+}
+.backButton >*{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+
+
+}
+@media(max-width:880px){
+    .detailspage{
+        padding:24px;
+    }
+}

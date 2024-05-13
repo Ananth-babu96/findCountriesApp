@@ -1,0 +1,142 @@
+body{
+}
+.homeBtn{
+    cursor: pointer;
+}
+.homepage{
+    color:white;
+    background:hsl(207, 26%, 17%);
+    min-height:100vh;
+    transition:.2s;
+}
+.lightHomepage{
+    background: hsl(0, 0%, 86%);
+    color:hsl(200, 15%, 8%)
+}
+.navbar{
+    background:hsl(209, 23%, 22%);
+    height:50px;
+    padding:0 12px;
+    box-shadow: 0 5px 22px hsl(207, 29%, 9%);
+}
+.lightNavbar{
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 22px hsl(0, 0%, 67%);
+    
+}
+
+.navbar ul{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    gap: 5px;
+    list-style: none;
+    height:100%;
+
+}
+.navbar ul li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.inputField form input{
+    height:30px;
+    width:300px;
+    color:white;
+    padding-left: 12px;
+    background:hsl(207, 26%, 17%);
+    border:none;
+    outline:none;
+    transition:.2s
+
+}
+.inputField.lightInputField form input{
+    background: hsl(0, 1%, 86%);
+    color:black;
+}
+.filterField > *{
+    height:40px;
+    width:150px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    background:hsl(207, 26%, 17%);
+    transition:.2s;
+    position: relative;
+    cursor: pointer;
+}
+.dropDownIcon{
+    transform: rotate(0deg);
+    transition: .2s;
+}
+.invertIcon{
+    transform: rotate(180deg);
+}
+.regions{
+    position: absolute;
+    border-radius: 8px;
+    background: hsl(207, 26%, 17%);
+    padding:0 15px;
+    width:150px;
+    top:44px;
+    left:0;
+    height:0;
+    overflow: hidden;
+    transition:.4s;
+}
+
+.showMenu{
+    height:fit-content
+}
+.regions > *:hover{
+    cursor: pointer;
+    color:lightblue;
+}
+.filterField.lightFilterField div{
+    background: hsl(0, 1%, 86%);
+}
+.modeSwitch{
+    font-size: 22px;
+}
+
+
+.countriesBox{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,20%));
+    
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 1rem;
+    margin:22px 0;
+    
+}
+/*@media(max-width:1200px){
+    .countriesBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+}*/
+@media(max-width:760px){
+    .navbar ul{
+        grid-template-rows: 2;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .inputField{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .filterField{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .inputField form input{
+        width:100%;
+    }
+    .navbar{
+        height:100px;
+    }
+    
+}

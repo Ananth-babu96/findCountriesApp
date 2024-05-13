@@ -1,0 +1,36 @@
+.displayCountryDetails{
+    background: hsl(209, 23%, 22%);
+    height:330px;
+    transition:.2s;
+    cursor: pointer;
+}
+.detailsLight{
+    background: white;
+}
+.flag {
+    width:100%;
+    height:50%;
+
+}
+.flag img {
+    width:100%;
+    height:100%;
+
+}
+.info{
+    margin:12px 12px;
+}
+.info h3{
+    margin-bottom: 22px;
+}
+/*@media(max-width:1200px){
+    .displayCountryDetails{
+        transform: scale(1.1);
+       
+    }
+}
+@media(max-width:760px){
+    .displayCountryDetails{
+       
+    }
+}*/
